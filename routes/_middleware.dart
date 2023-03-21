@@ -1,7 +1,9 @@
 import 'package:dart_frog/dart_frog.dart';
 
+///this function will be executed on all requests
 Handler middleware(Handler handler) {
   return handler.use(requestLogger());
+
   // return (context) async {
   //   // Execute code before request is handled.
   //   // Forward the request to the respective handler.
